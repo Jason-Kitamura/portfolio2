@@ -1,0 +1,26 @@
+#homeArea {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    
+}
+#backgroundArea{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./assets/space.jpg');
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    opacity: 0.6;
+}
+.fadeIn{
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.6;
+    }
+  }

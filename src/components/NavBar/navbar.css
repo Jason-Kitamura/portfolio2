@@ -1,0 +1,87 @@
+#navArea{
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    /* border-bottom: solid thin rgba(255, 255, 255, 0.582) ; */
+    z-index: 1;
+    /* background-color: rgba(255, 255, 255, 0.164); */
+    
+}
+#navArea1{
+    width: 100vw;
+    height: fit-content;
+    position: fixed;
+    z-index: 1;
+    visibility: hidden;
+    padding-top: 30px;
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+}
+#centerNav{
+    font-family: 'Great Vibes', cursive;
+    color: rgba(255, 255, 255, 0.801);
+    text-align: center;
+    font-size: 60px;
+    padding-top: 40px;
+}
+.sideNav{
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    /* opacity: 0.6; */
+    color: rgba(255, 255, 255, 0.705);
+    text-align: center;
+    padding-top: 70px;
+}
+.sideNav p{
+    padding: 0 5px 0 5px;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    border-bottom: rgba(255, 255, 255, 0) thin solid;
+
+}
+.sideNav p:hover{
+    color: rgb(255, 255, 255);
+    
+    cursor: pointer;
+    border-bottom: white thin solid;
+    transition: 1s;
+}
+#navArea1 i{
+    position: fixed;
+    left: 20px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+@media screen and (max-width: 1100px){
+    #centerNav{
+        font-size: 40px;
+        padding-top: 50px;
+    }
+    .sideNav{
+        font-size: 20px;
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #centerNav{
+        font-size: 25px;
+        padding-top: 50px;
+    }
+    .sideNav{
+        font-size: 15px;
+        padding-top: 60px;
+    }
+}
+@media screen and (max-width: 500px){
+   
+    #navArea{
+        visibility: hidden;
+    }
+    #navArea1{
+        visibility: visible;
+    }
+}
