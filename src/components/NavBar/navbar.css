@@ -19,6 +19,10 @@
     font-size: 30px;
     font-family: 'Great Vibes', cursive;
 }
+#smlNav{
+    font-family: 'Josefin Slab', serif;
+    font-size: 15px;
+}
 #centerNav{
     font-family: 'Great Vibes', cursive;
     color: rgba(255, 255, 255, 0.801);
@@ -43,18 +47,13 @@
 
 }
 .sideNav p:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 175, 64);
     
     cursor: pointer;
-    border-bottom: white thin solid;
+    border-bottom: rgb(255, 175, 64) thin solid;
     transition: 1s;
 }
-#navArea1 i{
-    position: fixed;
-    left: 20px;
-    padding-top: 5px;
-    font-size: 30px;
-}
+
 @media screen and (max-width: 1100px){
     #centerNav{
         font-size: 40px;

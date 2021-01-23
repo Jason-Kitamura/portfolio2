@@ -1,5 +1,5 @@
 #homeArea {
-    height: 100vh;
+    height: 1200px;
     width: 100vw;
     background-color: black;
     
@@ -14,9 +14,20 @@
     opacity: 0.6;
 }
 .fadeIn{
-    animation: fadeIn 5s;
+    animation: fadeIn 4s;
 }
 @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fadeIn1{
+    animation: fadeIn1 8s;
+}
+@keyframes fadeIn1 {
     from {
       opacity: 0;
     }
@@ -24,3 +35,91 @@
       opacity: 0.6;
     }
   }
+
+  #homeBody{
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 150px;
+    border-top: white solid thin;
+  }
+  #homeBody .row{
+    height: 100%;
+  }
+  /* #homeScreen{
+    width: max-content;
+    height: 100%;
+    margin: 0;
+    float: left;
+  } */
+  #homeScreen{
+    width: 90vw;
+    margin: 50px;
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 0.212);
+  }
+  #homeHeader{
+    width: 100%;
+    height: fit-content;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: Bold;
+  }
+  #homeScreen img{
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+  }
+  #iconBar{
+    position: fixed;
+    z-index:1;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.123);
+    border-left: white solid thin;
+    padding: 0;
+    padding-top: 0px;
+  }
+  .iconDiv{
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 35px;
+  }
+  .iconDiv:hover{
+    cursor: pointer;
+    color: rgb(255, 175, 64);
+    transition: 1s;
+  }
+  @media screen and (max-width: 1100px){
+    #homeBody{
+      margin-top: 130px;
+    }
+}
+
+@media screen and (max-width: 750px){
+  #homeBody{
+    margin-top: 110px;
+  }
+}
+@media screen and (max-width: 500px){
+  #homeBody{
+    margin-top: 130px;
+  }
+  #iconBar{
+   
+    width: 40px;
+
+  }
+  .iconDiv{
+    font-size: 30px;
+  }
+}

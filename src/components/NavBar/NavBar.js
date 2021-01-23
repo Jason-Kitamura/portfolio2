@@ -35,11 +35,19 @@ function NavBar(){
             </div>
 
             <div id='navArea1'>
-                <div>
-                        
-                    <div>
-                        <i class='fa fa-bars'></i>
-                        <p>Jason Kitamura</p>
+                <p>Jason Kitamura</p>
+                <div id='smlNav' class='row'>
+                    <div class='col-3'>
+                        <p>Home</p>
+                    </div>
+                    <div class='col-3'>
+                        <p>Portfolio</p>
+                    </div>
+                    <div class='col-3'>
+                        <p>Art Store</p>
+                    </div>
+                    <div class='col-3'>
+                        <p>Contact</p>
                     </div>
                 </div>
             </div>
