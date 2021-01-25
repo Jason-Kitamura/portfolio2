@@ -4,7 +4,7 @@ import './navbar.css';
 function NavBar(){
 
     return(
-        <div>
+        <div id='nav'>
             <div id='navArea'>
                 <div class='row'>
                     <div id='leftNav' class='col-4 sideNav'>
@@ -51,8 +51,7 @@ function NavBar(){
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div>     
     )
 }
 
