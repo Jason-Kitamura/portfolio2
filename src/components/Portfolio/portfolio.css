@@ -68,9 +68,70 @@
     background-position: bottom;
     background-size: cover; */
 }
+#monitorGif:hover{
+    cursor: pointer;
+}
+
 #phoneGif{
     padding-top: 5vw;
     padding-left: 0;
+}
+#phoneGif:hover{
+    cursor: pointer;
+}
+#monitorFull{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.712);
+    visibility: hidden;
+}
+#monitorFull.active{
+    visibility: visible;
+}
+#phoneFull img{
+    /* max-width: 100vw; */
+    max-height: 100vh;
+    max-width: 100vw;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+#phoneFull{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.842);
+    visibility: hidden;
+}
+#phoneFull.active{
+    visibility: visible;
+}
+#monitorFull img{
+    /* max-width: 100vw; */
+    max-height: 100vh;
+    max-width: 100vw;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+.exitBtn{
+    color: rgb(253, 253, 253);
+    position: absolute;
+    z-index: 0;
+    font-size: 30px;
+    /* font-weight: lighter; */
+    top: 5px;
+    right: 5px;
+}
+.exitBtn:hover{
+    cursor: pointer;
 }
 @media screen and (max-width: 1000px){
 
@@ -109,6 +170,12 @@
     }
     #display.active{
         padding-left: 0px;
+    }
+    #monitorFull img{
+        padding-top: 200px;
+    }
+    #phoneFull img{
+        margin-top: 50px;
     }
    
  
