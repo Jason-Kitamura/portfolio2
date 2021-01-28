@@ -7,6 +7,8 @@ function Portfolio(){
 
     function toggleMenu(){
         document.getElementById('menu').classList.toggle('active');
+        document.getElementById('menuList').classList.toggle('active');
+        document.getElementById('menuList1').classList.toggle('active');
         document.getElementById('display').classList.toggle('active');
 
     }

@@ -9,7 +9,6 @@
     border-bottom: solid thin rgba(255, 255, 255, 0.301) ;
     z-index: 1;
     /* background-color: rgba(255, 255, 255, 0.164); */
-    
 }
 #navArea1{
     width: 100vw;
@@ -24,8 +23,11 @@
     border-bottom: solid thin rgba(255, 255, 255, 0.301) ;
 
 }
+#navArea1 img{
+    width: 150px;
+}
 #smlNav{
-    font-family: 'Josefin Slab', serif;
+    font-family:  Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 #centerNav{
@@ -33,17 +35,23 @@
     color: rgba(255, 255, 255, 0.801);
     text-align: center;
     font-size: 60px;
-    padding-top: 40px;
+    padding-top: 0px;
+}
+#centerNav img{
+    width: 250px;
 }
 .sideNav{
-    font-family: 'Josefin Slab', serif;
+    font-family:  Arial, Helvetica, sans-serif;
     font-size: 20px;
-    /* opacity: 0.6; */
-    color: rgba(255, 255, 255, 0.705);
+    
     text-align: center;
-    padding-top: 70px;
+    padding-top: 50px;
+}
+.sideNav a{
+    text-decoration: none;
 }
 .sideNav p{
+    color: rgba(255, 255, 255, 0.63);
     padding: 0 5px 0 5px;
     width: fit-content;
     display: block;
@@ -60,24 +68,22 @@
 }
 
 @media screen and (max-width: 1100px){
-    #centerNav{
-        font-size: 40px;
-        padding-top: 50px;
+    #centerNav img{
+     width: 250px;
     }
     .sideNav{
         font-size: 20px;
-        padding-top: 60px;
+        padding-top: 50px;
     }
 }
 
 @media screen and (max-width: 750px){
-    #centerNav{
-        font-size: 25px;
-        padding-top: 50px;
+    #centerNav img{
+    width: 150px;
     }
     .sideNav{
         font-size: 15px;
-        padding-top: 60px;
+        padding-top: 40px;
     }
 }
 @media screen and (max-width: 500px){

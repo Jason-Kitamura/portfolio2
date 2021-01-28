@@ -1,5 +1,6 @@
 
 import './App.css';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 
 import Home from './components/Home/Home';
@@ -10,14 +11,16 @@ import Portfolio from './components/Portfolio/Portfolio';
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <div id='main'>
-        <Icons/>
-        <Portfolio/>
-      </div>
-     
-      
-      
+      <Router>
+        <NavBar/>
+        <div id='main'>
+          <Icons/>
+          <Switch>
+            <Route path={["/portfolio"]} component={Portfolio} />
+            <Route path={["/"]} component={Home} />
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }

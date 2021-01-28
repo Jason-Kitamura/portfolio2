@@ -3,38 +3,14 @@
     width: 100%;
     height: 85vh;
 }
-#menuBtn{
-    position: absolute;
-    z-index: 1;
-    color: white;
-    top:5px;
-    left: 5px;
-    font-size: 30px;
-    border-radius: 50px;
-    padding: 15px;
-}
 
-#menuBtn:hover{
-    color: rgb(80, 139, 207);
-    cursor: pointer;
-}
-#menu{
-    position: absolute;
-    width: 250px;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.068);
-    transition: 0.5s;
-}
-#menu.active{
-    width: 75px;
-}
 #display{
     width: 100%;
     height: 100%;
     display: block;
     margin: auto;
-    padding-top: 50px;
-    padding-left: 250px;
+    padding-top: 25px;
+    padding-left: 175px;
     padding-right: 100px;
     transition: 0.5s;
 }
@@ -43,44 +19,98 @@
 }
 #displayArea{
     width: 100%;
+    /* max-width: 1200px; */
     height:100%;
-    background-color: rgba(255, 255, 255, 0.226);
-   overflow-y: scroll;
+    background-color: rgba(51, 51, 51, 0.246);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+#displayArea .col-9{
+    padding-right: 0;
+}
+#displayArea .col-3{
+    padding-left: 0;
+}
+#displayArea img{
+    width: 100%;
+}
+#projectHeader{
+    width: 100%;
+    background-color: rgba(42, 42, 42, 0.808);
+}
+#projectTitle{
+    width: fit-content;
+    /* display: block;
+    margin: auto; */
+    margin-left: 50px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.774);
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 30px;
+ 
+}
+#projectTitle p{
+    margin-bottom: 0;
+}
+#gifArea{
+    background-color: rgba(255, 255, 255, 0);
+}
+#gifRow{
+    max-width: 1400px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
     
+    /* background: url('./assets/floorShadow.png');
+    background-position: bottom;
+    background-size: cover; */
+}
+#phoneGif{
+    padding-top: 5vw;
+    padding-left: 0;
+}
+@media screen and (max-width: 1000px){
+
+ #projectTitle{
+    font-size: 25px;
+    }
+    #display{
+        padding-left: 150px;
+    }
+ 
 }
 @media screen and (max-width: 750px){
-    #menuBtn{
-        padding: 5px;
+
+    #display{
+        padding-left: 150px;
+        padding-right: 75px;
     }
- #menu{
-     width: 150px;
- }
- #menu.active{
-     width: 50px;
- }
- #display{
-     padding-left: 175px;
-     padding-right: 75px;
- }
- #display.active{
-     padding-left: 75px;
- }
+    #display.active{
+        padding-left: 75px;
+    }
+    #projectTitle{
+        font-size: 20px;
+        margin-left: 25px;
+        padding-top: 10px;
+    }
+     #gifRow{
+        margin-top: 10px;
+    }
+
 }
 @media screen and (max-width: 500px){
-    #menu{
-        width: 200px;
-        background-color: rgba(255, 255, 255, 0.719);
-    }
-    #menu.active{
-        width: 0px;
-    }
     #display{
         padding-left: 0px;
         padding-right: 0px;
+        padding-top: 40px;
     }
     #display.active{
         padding-left: 0px;
     }
+   
  
 }
 #displayArea::-webkit-scrollbar {
@@ -90,8 +120,16 @@
     #displayArea::-webkit-scrollbar-track {
         background-color: none;
        
+   
+       
     }
     
     #displayArea::-webkit-scrollbar-thumb {
-        background-color:  rgba(80, 139, 207, 0.637);
+        background-color:  rgba(80, 139, 207, 0.637);   
+        border-radius: 5px;
+        border-top-left-radius: 0px;
     }
+
+#fillerSpot{
+    background-color: rgba(42, 42, 42, 0.808);
+}

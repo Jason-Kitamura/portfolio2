@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './navbar.css';
+
+import Signature from './assets/jasonKitamura.png'
 
 function NavBar(){
 
@@ -10,24 +13,32 @@ function NavBar(){
                     <div id='leftNav' class='col-4 sideNav'>
                         <div class='row'>
                             <div class='col-6'>
-                                <p>Home</p>
+                                <Link to="/" >
+                                    <p>Home</p>
+                                </Link>
                             </div>
                             <div class='col-6'>
-                                <p>Portfolio</p>
+                                <Link to="/portfolio" >
+                                    <p>Portfolio</p>
+                                </Link>
                             </div>
                         </div>
                     </div>
                     <div id='centerNav' class='col-4'>
-                        <p>Jason Kitamura</p>
+                        <img src={Signature}></img>
                         
                     </div>
                     <div id='rightNav' class='col-4 sideNav'>
                         <div class='row'>
                             <div class='col-6'>
-                                <p>Art Store</p>
+                                <Link to="/store" >
+                                    <p>Art Store</p>
+                                </Link>
                             </div>
                             <div class='col-6'>
-                                <p>Contact</p>
+                                <Link to="/contact" >
+                                    <p>Contact</p>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -35,7 +46,7 @@ function NavBar(){
             </div>
 
             <div id='navArea1'>
-                <p>Jason Kitamura</p>
+                <img src={Signature}></img>
                 <div id='smlNav' class='row'>
                     <div class='col-3'>
                         <p>Home</p>
