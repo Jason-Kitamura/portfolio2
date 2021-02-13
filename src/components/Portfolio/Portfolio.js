@@ -1,5 +1,7 @@
 import React from 'react';
 import './portfolio.css';
+
+import Icons from '../Icons/Icons';
 import Menu from './Menu';
 import Display from './Display.js';
 
@@ -15,6 +17,7 @@ function Portfolio(){
 
     return(
         <div id='portfolioArea' >
+            <Icons/>
             <i id='menuBtn' class='fa fa-bars' onClick={toggleMenu}></i>
             <Menu/>
             <Display/>

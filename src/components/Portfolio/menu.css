@@ -10,7 +10,7 @@
 }
 
 #menuBtn:hover{
-    color: rgb(80, 139, 207);
+    color: rgb(228, 132, 115);
     cursor: pointer;
 }
 #menu{
@@ -84,7 +84,7 @@
     margin-bottom: 20px;
 }
 .projectIcon:hover{
-    color:rgb(80, 139, 207)
+    color:rgb(228, 132, 115)
 }
 .projectIcon a{
     color:rgba(245, 245, 245, 0.596);

@@ -1,16 +1,13 @@
 import React from 'react';
 import './home.css';
-import bernardHome from './assets/BHMonitor.gif';
-import bernardPhone from './assets/BHPhone.gif';
 
-// import * as Icon from 'bootstrap-icons-react';
-import { FaGithub } from 'react-icons/fa';
+import Icons from '../Icons/Icons';
 
 function Home(){
 
     return(
         <div id='homeArea'>
- 
+            <Icons/>
         </div>
     )
 }

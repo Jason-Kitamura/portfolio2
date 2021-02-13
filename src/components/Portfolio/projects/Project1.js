@@ -3,6 +3,9 @@ import '../portfolio.css';
 
 import bernardHome from '../assets/BHMonitor.gif';
 import bernardPhone from '../assets/BHPhone.gif';
+import BHFullMonitor from '../assets/BHFullMonitor.gif';
+import BHFullPhone from '../assets/BHFullPhone.gif';
+
 
 function Project1(){
 
@@ -90,13 +93,13 @@ function Project1(){
                     <li>hi</li>
                 </ul>
                 </div>
-                <div id='monitorFull'>
-                    <i onClick={expandMonitor} class='exitBtn fas fa-times'></i>
-                    <img  src={bernardHome}></img>
+                <div onClick={expandMonitor} id='monitorFull'>
+                    <i  class='exitBtn fas fa-times'></i>
+                    <img  src={BHFullMonitor}></img>
                 </div>
-                <div id='phoneFull'>
-                    <i onClick={expandPhone} class='exitBtn fas fa-times'></i>
-                    <img  src={bernardPhone}></img>
+                <div onClick={expandPhone} id='phoneFull'>
+                    <i  class='exitBtn fas fa-times'></i>
+                    <img  src={BHFullPhone}></img>
                 </div>
         </div>
     )
