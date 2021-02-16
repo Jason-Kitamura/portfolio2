@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './portfolio.css';
 
 import Icons from '../Icons/Icons';
@@ -17,7 +18,18 @@ function Portfolio(){
 
     return(
         <div id='portfolioArea' >
-            <Icons/>
+           
+            <div id='header'>
+                <div id='backBtn'>
+                    <Link to="/" >
+                        <i class='fas fa-arrow-left'></i>
+                    </Link>
+                </div>
+                <div id='title'>
+                    <p>Coding Portfolio</p>
+                </div> 
+            </div>
+            
             <i id='menuBtn' class='fa fa-bars' onClick={toggleMenu}></i>
             <Menu/>
             <Display/>

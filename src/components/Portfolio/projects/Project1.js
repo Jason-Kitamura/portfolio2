@@ -1,5 +1,5 @@
 import React from 'react';
-import '../portfolio.css';
+import './projects.css';
 
 import bernardHome from '../assets/BHMonitor.gif';
 import bernardPhone from '../assets/BHPhone.gif';
@@ -35,6 +35,39 @@ function Project1(){
                         </div>
                     </div>
                 </div>
+                <div class='projectDescription'>
+                    
+                <a target='_blank' href='https://www.bernardbuild.ca' rel='noopener noreferrer'>
+                    bernardbuild.ca
+                    </a>
+                    <i class='fab fa-github githubLink'></i>
+                    <p class='prejectDes'>Contract and Interior Design Website built using ReactJS</p>
+                    <div class='row'>
+                        <div class='features col-6'>
+                            <p>Features</p>
+                            <ul>
+                                <li>Beautiful self-built slideshow homescreen</li>
+                                <li>Responsive (Seperate desktop and mobile layouts)</li>
+                                <li>NavBar</li>
+                                <li>About Area</li>
+                                <li>Gallery</li>
+                                <li>Contact Form</li>
+                                <li>Hosted with AWS Amplify</li>
+                            </ul>
+                        </div>
+                        <div class='tech col-6'>
+                            <p>Technology</p>
+                            <ul>
+                                <li>ReactJS HTML CSS Javascript</li>
+                                <li>React-router-dom</li>
+                                <li>Funtional components</li>
+                                <li>EmailJS</li>
+                                <li>AWS Amplify</li>
+                                <li>Adobe Photoshop</li>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
                 <div id='fillerSpot'>
 
                 

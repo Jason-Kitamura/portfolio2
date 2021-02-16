@@ -3,10 +3,38 @@
     width: 100%;
     height: 85vh;
 }
+#header{
+    height: 30px;
+}
+#title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.712);
+    padding: 5px;
+    font-size: 30px;
+    font-family:  Arial, Helvetica, sans-serif;
+}  
+#backBtn{
+   position: absolute;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    width: fit-content;
+    font-size: 25px;
+}
+#backBtn a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+#backBtn a:hover{
+    color: white;
+    cursor: pointer;
+}
+
 
 #display{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: block;
     margin: auto;
     padding-top: 25px;
@@ -32,114 +60,18 @@
 #displayArea .col-3{
     padding-left: 0;
 }
-#displayArea img{
-    width: 100%;
-}
-#projectHeader{
-    width: 100%;
-    background-color: rgba(42, 42, 42, 0.808);
-}
-#projectTitle{
-    width: fit-content;
-    /* display: block;
-    margin: auto; */
-    margin-left: 50px;
-    margin-bottom: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: rgba(255, 255, 255, 0.774);
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 30px;
- 
-}
-#projectTitle p{
-    margin-bottom: 0;
-}
-#gifArea{
-    background-color: rgba(255, 255, 255, 0);
-}
-#gifRow{
-    max-width: 1400px;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    
-    /* background: url('./assets/floorShadow.png');
-    background-position: bottom;
-    background-size: cover; */
-}
-#monitorGif:hover{
-    cursor: pointer;
-}
 
-#phoneGif{
-    padding-top: 5vw;
-    padding-left: 0;
-}
-#phoneGif:hover{
-    cursor: pointer;
-}
-#monitorFull{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.712);
-    visibility: hidden;
-}
-#monitorFull.active{
-    visibility: visible;
-}
-#phoneFull img{
-    /* max-width: 100vw; */
-    max-height: 100vh;
-    max-width: 100vw;
-    width: auto;
-    display: block;
-    margin: auto;
-}
-#phoneFull{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.842);
-    visibility: hidden;
-}
-#phoneFull.active{
-    visibility: visible;
-}
-#monitorFull img{
-    /* max-width: 100vw; */
-    max-height: 100vh;
-    max-width: 100vw;
-    width: auto;
-    display: block;
-    margin: auto;
-}
-.exitBtn{
-    color: rgb(253, 253, 253);
-    position: absolute;
-    z-index: 0;
-    font-size: 30px;
-    /* font-weight: lighter; */
-    top: 5px;
-    right: 5px;
-}
-.exitBtn:hover{
-    cursor: pointer;
-}
+
 @media screen and (max-width: 1000px){
-
- #projectTitle{
-    font-size: 25px;
-    }
     #display{
         padding-left: 150px;
+        padding-right: 50px;
+    }
+    #display.active{
+        padding-left: 75px;
+    }
+    #title{
+        font-size: 25px;
     }
  
 }
@@ -147,56 +79,37 @@
 
     #display{
         padding-left: 150px;
-        padding-right: 75px;
+        padding-right: 20px;
     }
     #display.active{
-        padding-left: 75px;
+        padding-left: 50px;
     }
-    #projectTitle{
-        font-size: 20px;
-        margin-left: 25px;
-        padding-top: 10px;
+    #backBtn{
+        padding-top: 5px;
+        padding-left: 10px;
     }
-     #gifRow{
-        margin-top: 10px;
-    }
-
 }
 @media screen and (max-width: 500px){
     #display{
         padding-left: 0px;
         padding-right: 0px;
-        padding-top: 40px;
+        padding-top: 30px;
     }
     #display.active{
         padding-left: 0px;
-    }
-    #monitorFull img{
-        padding-top: 200px;
-    }
-    #phoneFull img{
-        margin-top: 50px;
-    }
-   
- 
+    } 
 }
 #displayArea::-webkit-scrollbar {
     width: 10px;
     }
     
-    #displayArea::-webkit-scrollbar-track {
-        background-color: none;
-       
-   
-       
-    }
-    
-    #displayArea::-webkit-scrollbar-thumb {
-        background-color:  rgba(80, 139, 207, 0.637);   
-        border-radius: 5px;
-        border-top-left-radius: 0px;
-    }
-
-#fillerSpot{
-    background-color: rgba(42, 42, 42, 0.808);
+#displayArea::-webkit-scrollbar-track {
+    background-color: none;
 }
+
+#displayArea::-webkit-scrollbar-thumb {
+    background-color:  rgba(80, 139, 207, 0.637);   
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+}
+

@@ -2,8 +2,8 @@
     position: absolute;
     z-index: 1;
     color: rgba(255, 255, 255, 0.63);
-    top:5px;
-    left: 10px;
+    top:45px;
+    left: 5px;
     font-size: 30px;
     border-radius: 50px;
     padding: 15px;
@@ -22,7 +22,7 @@
 }
 #menu.active{
     width: 75px;
-    border-right: rgba(255, 255, 255, 0.301) solid thin;
+    /* border-right: rgba(255, 255, 255, 0.301) solid thin; */
 }
 #menuList{
     padding-top: 75px;
@@ -110,17 +110,24 @@
 @media screen and (max-width: 500px){
     #menu{
         width: 200px;
-        background-color: rgb(7, 7, 7);
+        background-color: rgba(7, 7, 7, 0.856);
+        position: fixed;
+        right: 0;
+        top:0;
     }
     #menu.active{
         width: 0px;
     }
     #menuBtn{
         font-size: 20px;
+        top: 10px;
+        right: 15px;
+        left: auto;
+        
     }
     #menuList{
         color: rgba(255, 255, 255, 0.849);
-        padding-top: 40px;
+        padding-top: 0px;
     }
     #menuList1.active{
         visibility: hidden;
