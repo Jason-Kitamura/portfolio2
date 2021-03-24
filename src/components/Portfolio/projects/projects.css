@@ -2,10 +2,20 @@
     width: 100%;
     background-color: rgba(42, 42, 42, 0.808);
 }
-#projectTitle{
+.projectTitle{
     width: fit-content;
-    /* display: block;
-    margin: auto; */
+    display: block;
+    margin: auto;
+
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.774);
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+ 
+}
+#projectHeader p{
+    width: fit-content;
     margin-left: 50px;
     margin-bottom: 0px;
     padding-top: 20px;
@@ -13,14 +23,24 @@
     color: rgba(255, 255, 255, 0.774);
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 30px;
- 
 }
-#projectTitle p{
-    margin-bottom: 0;
-}
-#gifArea{
-    background-color: rgba(255, 255, 255, 0);
 
+.gifArea{
+    background-color: rgba(255, 255, 255, 0);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1000px;
+    margin: auto;
+    }
+.gifMonitor img{
+    width: 100%;
+    padding: 20px;
+}
+.gifPhone img{
+    width: 80%;
+    padding: 20px;
+    display: block;
+    margin: auto;
 }
 #gifRow{
     max-width: 1400px;
@@ -33,11 +53,11 @@
     background-position: bottom;
     background-size: cover; */
 }
-#gifRow Img{
+.gifRow Img{
     width: 100%;
 }
 
-#monitorGif:hover{
+.monitorGif:hover{
     cursor: pointer;
 }
 

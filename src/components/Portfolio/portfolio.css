@@ -4,7 +4,9 @@
     height: 85vh;
 }
 #header{
-    height: 30px;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
 }
 #title {
     text-align: center;
@@ -37,9 +39,9 @@
     height: 100vh;
     display: block;
     margin: auto;
-    padding-top: 25px;
+    padding-top: 75px;
     padding-left: 175px;
-    padding-right: 100px;
+    padding-right: 25px;
     transition: 0.5s;
 }
 #display.active{

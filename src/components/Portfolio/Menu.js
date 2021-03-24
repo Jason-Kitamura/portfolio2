@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import './portfolio.css';
 import './menu.css';
+
+import BDLogo from './assets/BDLogo.png';
 
 function Menu(){
 
@@ -12,13 +15,13 @@ function Menu(){
                 <ul>
                     <li class='project'>
                         <Link to="/portfolio/project1" >
-                            <p>Project1</p>
+                            <p>Bernard Design</p>
                         </Link>
                         <ul class='projectList'>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Gallery</li>
-                            <li>Contact</li>
+                            <HashLink smooth to="/portfolio/project1/#projectHeader"><li>Home</li></HashLink>
+                            <HashLink smooth to="/portfolio/project1/#aboutPage"><li>About</li></HashLink>
+                            <HashLink smooth to="/portfolio/project1/#galleryPage"><li>Gallery</li></HashLink>
+                            <HashLink smooth to="/portfolio/project1/#contactPage"><li>Contact</li></HashLink>
                         </ul>
                     </li>
                     <li class='project'>
@@ -49,7 +52,7 @@ function Menu(){
                 <ul>
                     <li class='projectIcon'>
                         <Link to="/portfolio/" >
-                            <i class='fab fa-amazon'></i>
+                            <img src={BDLogo} alt='bdlogo'></img>
                         </Link>
                         
                     </li>
